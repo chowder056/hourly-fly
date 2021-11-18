@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar color=primary>
+    <ion-title></ion-title>
+    <ion-app>
+        <ion-buttons slot="start">
+          <ion-menu-button autoHide="false"></ion-menu-button>
+        </ion-buttons>
+        <ion-router-outlet id="main"></ion-router-outlet>
+      </ion-app>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+    <ion-grid class="completo">
+    <ion-row class="completo ion-align-items-center">
+        <ion-col size="20" offset="-4">
+            <ion-button
+                href="notas"
+                color="success"
+                expand="block"
+                size="large"
+                href="notas"
+            >
+                Añadir Horario
+            </ion-button>
+        </ion-col>
+        <ion-col size="20" offset="-4">
+            <ion-button
+                href="alarma"
+                color="danger"
+                expand="block"
+                size="large"
+            >
+                Añadir Alarma
+            </ion-button>
+        </ion-col>
+        <ion-col size="20" offset="-4">
+            <ion-button
+                href="mapa"
+                color="primary"
+                expand="block"
+                size="large"
+            >
+                Ver mapa
+            </ion-button>
+        </ion-col>
+        <ion-col size="6" offset="3">
+            <ion-button
+                href=""
+                color="dark"
+                expand="block"
+                size="small"
+            >
+                Cerrar sesión
+            </ion-button>
+        </ion-col>
+
+
+    </ion-row>
+</ion-grid>
+</ion-content>

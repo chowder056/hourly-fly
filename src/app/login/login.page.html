@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<form [formgroup]= "formulariologin">
+
+  <ion-card>
+    <ion-card-header>
+      <ion-item>
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input formcontrolname="nombre" ></ion-input>
+       </ion-item>
+       <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input formcontrolname="password" type=password ></ion-input>
+       </ion-item>
+    </ion-card-header>
+    <br>
+    <ion-button (click)="ingresar()">
+      Ingresar
+    </ion-button>  
+  </ion-card>
+
+  </form>
+
+</ion-content>
